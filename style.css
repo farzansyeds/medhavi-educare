@@ -608,3 +608,47 @@ header {
         font-size: 1.8rem; /* Shrinks big headlines so they fit on one line */
     }
 }
+
+.whatsapp-contact-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #eee;
+}
+
+.whatsapp-contact-section h3 {
+    font-size: 1.5rem;
+    color: #0b1320; /* Dark navy from your theme */
+    margin-bottom: 20px;
+}
+
+.whatsapp-footer-btn {
+    background-color: #25D366; /* Official WhatsApp Green */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 50px; /* Rounded pill shape */
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.whatsapp-footer-btn:hover {
+    background-color: #128C7E; /* Darker WhatsApp green on hover */
+    transform: translateY(-3px);
+}
+
+.whatsapp-footer-btn i {
+    font-size: 1.5rem;
+}
+
+/* Ensure it looks good on phones */
+@media (max-width: 600px) {
+    .whatsapp-contact-section h3 {
+        font-size: 1.2rem;
+    }
+}
